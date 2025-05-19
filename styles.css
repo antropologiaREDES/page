@@ -1,0 +1,338 @@
+@font-face {
+    font-family: Inter;
+    src: url("Inter.ttf");
+}
+
+@font-face {
+    font-family: Berlin Sans FB;
+    src: url("Berlin.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.overflow {
+    max-width: 100%;
+}
+
+.area {
+    height: 92.5%;
+}
+
+#navbar {
+    background-color: #4da692;
+    display: flex;
+    padding: 0 10vw;
+}
+
+#navbar > button {
+    font-family: Berlin Sans FB;
+    font-size: 1.15rem;
+    flex: 1;
+    height: 7.5vh;
+    border: none;
+    background-color: #4da692;
+    transition: background-color .4s;
+}
+
+#navbar > button:hover {
+    background-color: #7ab8aa;
+    cursor: pointer;
+}
+
+#headbar {
+    background-color: #2d58a4;
+    color: #efefef;
+    height: 7vh;
+    line-height: 7vh;
+    padding-left: 2.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.5%;
+    padding-right: 0.75%;
+    height: 100%;
+}
+
+.icon_link {
+    display: block;
+    height: 65%;
+}
+
+.icon {
+    height: 100%;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(23deg) brightness(104%) contrast(101%);
+    transition: filter .3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+#cover {
+    height: 93vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#cover > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#cover-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    height: 87.5%;
+    width: 33vw;
+    background-color: #36366057;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(54, 54, 96, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+#cover-card > img {
+    width: 75%;
+}
+
+#cover-card > #text {
+    color: black;
+    font-family: Berlin Sans FB;
+    font-size: 1.05rem;
+    padding: 5% 5% 2.5% 5%;
+    text-align: center;
+}
+
+#cover-card > button {
+    background-color: #184897;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Inter;
+    font-size: 1.1rem;
+    margin: 2.25vh;
+    padding: 2.25vh;
+    border-radius: 6px;
+    transition: background-color .4s;
+}
+
+#cover-card > button:before {
+    content: "🗎 ";
+}
+
+#cover-card > button:hover {
+    cursor: pointer;
+    background-color: #4da692;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 66%;
+}
+
+#about-area {
+    min-height: 75vh;
+    min-height: 92.5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-area > #needs {
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-area > #needs > #cell {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-area > #needs > #cell >  img {
+    height: 80vh;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+#about-area > #needs > #text {
+    flex: 1;
+    font-family: Berlin Sans FB;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+#about-area > #tl-title {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#about-area > #tl-content {
+    margin: 1vh 5vw 0 5vw;
+    font-family: Inter;
+    text-align: center;
+}
+
+#project-area {
+    min-height: 92.5vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5vw;
+    box-sizing: border-box;
+}
+
+#project-area > #head {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+#head-img {
+    width: 7.5vw;
+}
+
+#project-body {
+    margin: 0vw 1.5vw 1.5vw 1.5vw;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    flex-basis: 22%;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #00000044;
+    margin: 2%;
+}
+
+.filter-color {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0.7;
+    box-shadow: 
+        inset -5px -5px 15px #ffffff77, 
+        inset 5px 5px 15px #ffffff77;
+}
+
+.item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 75%;
+}
+
+.item > .item-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    transform: translateY(-100%);
+    margin: 4% 5%;
+    color: white;
+}
+
+.item > .item-text > .title {
+    font-family: Berlin Sans FB;
+    font-size: 1.75rem;
+    margin-bottom: 5%;
+    color: #000;
+}
+
+.item > .item-text > .caption {
+    font-family: Inter;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+#crono-area {
+    min-height: 92.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#crono-area > #crono-title {
+    font-family: Berlin Sans FB;
+    font-size: 1.5rem; 
+    margin: 1.5% 0;
+}
+
+#crono-area > #chart {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .overflow {
+        overflow: hidden;
+    }
+    #cover-card {
+        width: 95vw;
+        height: 65vh;
+    }
+    #about-area > #needs {
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    #project-body {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #cover-card > button:before {
+        content: "";
+    }
+    #head-img {
+        width: 40vw;
+    }
+    .item {
+        width: 75vw;
+    }
+}

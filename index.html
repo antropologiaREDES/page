@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto REDES</title>
+</head>
+<body>
+    <div class="overflow" id="headbar">
+        proyecto.redes.contacto@gmail.com
+        <div id="icon-container">
+           <a class="icon_link" target="_blank" href="https://www.instagram.com/proyecto_redes_/">
+               <img class="icon" src="imgs/icons/instagram.svg">
+           </a> 
+           <a class="icon_link" target="_blank" href="https://x.com/proyecto_redes_">
+               <img class="icon" src="imgs/icons/twitter.svg">
+           </a>
+        </div>
+    </div>
+    <div class="overflow" id="cover">
+        <div id="cover-card">
+            <img src="imgs/logo/logo.svg"/>
+            <div id="text">
+                Desde la antropología, este proyecto colabora con pacientes psiquiátricos para comprender sus experiencias y promover cuidados más horizontales, humanos y comunitarios. Busca amplificar sus voces y transformar los espacios psiquiátricos en entornos de apoyo y toma de decisiones compartida.
+            </div>
+            <button id="project-download">Documento del Proyecto</button>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="navbar">
+        <button class="navbar-btn" value="about-area">Sobre REDES</button>
+        <button class="navbar-btn" value="project-area">El proyecto</button>
+        <button class="navbar-btn" value="crono-area">Cronograma</button>
+    </div>
+    <div class="overflow" id="about-area">
+        <div id="needs">
+            <div id="cell">
+                <img src="imgs/gen/needs.svg">
+            </div>
+            <div id="text">
+                REDES es un proyecto que nace con el propósito de acompañar y comprender las experiencias de las personas que habitan los centros psiquiátricos, quienes enfrentan dinámicas que dificultan su participación activa y su reconocimiento como sujetos con voz propia. 
+                <br><br>
+                Aunque existen normativas que fomentan una atención centrada en la persona y su comunidad, siguen persistiendo barreras estructurales que pueden dificultar la implementación de estos principios en la práctica cotidiana. 
+                <br><br>
+                Redes busca generar espacios de diálogo, reflexión, formación y acción que permitan dar visión y poder transformar estas realidades. 
+                <br><br>
+                De esta manera, el proyecto va a integrar el análisis reflexivo con acciones concretas, con la intención de promover una mejora continua y dar fuerza a entornos más participativos e inclusivos en el ámbito de la salud mental.                                            
+            </div>
+        </div>
+        <div id="tl-title">Entre lo psicológico y lo social</div>
+        <div id="tl-content">
+            Este proyecto pues, queda vertebrado por la necesidad (y reivindicación desde REDES) de constatar la realidad social en los procesos sanitarios.
+            Cuando tornamos la mirada a la historia de la psiquiatría, vemos importantes movimientos en demandando una reforma al modelo psiquiátrico, algunos de ellos quedan presentes abajo.
+        </div>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vS0lHqshWjm85QY86Fiy76Q9qHrQ7dTzkwobxmuwyu6mGl_FtqmVLtyQdAZEcyocg&font=Amatic-Andika&lang=es&initial_zoom=2&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>    </div>
+    <div class="overflow" id="project-area" style="display: none;">
+        <div id="head">
+            <img id="head-img" src="imgs/logo/logo-mono.svg">
+        </div>
+        <div id="project-body">
+            <div class="item">
+                <img src="./imgs/items/notes.png">
+                <div class="item-text">
+                    <div class="title">Escuchar</div>
+                    <div class="caption">Realización de estudios de necesidades y exploración a través de la interacción con los residentes en los centros psiquíatricos</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./imgs/items/profes.png">
+                <div class="item-text">
+                    <div class="title">Formación</div>
+                    <div class="caption">Formar a los profesionales del sector de la salud mental en cuestiones sociales y de interacción con los pacientes para establecer bases y necesidades</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./imgs/items/center.png">
+                <div class="item-text">
+                    <div class="title">Centros</div>
+                    <div class="caption">Reformar los centros psiquíatricos en sus aspectos más importantes y más necesitados por los internos como la distribución de lugares sociales y de organización</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./imgs/items/community.png">
+                <div class="item-text">
+                    <div class="title">Comunidad</div>
+                    <div class="caption">Reformas en la comunidad donde se ubican estos centros para buscar la inclusión e interacción entre la comunidad social y la interna a través de la promoción de espacios compartidos</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./imgs/items/area.png">
+                <div class="item-text">
+                    <div class="title">Socialización</div>
+                    <div class="caption">Programas de socialización entre los internos y establecimiento de actividades necesarias y activas que funcionen dentro y fuera de las comunidades</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./imgs/items/divulg.png">
+                <div class="item-text">
+                    <div class="title">Concienciación</div>
+                    <div class="caption">Divulgación de las realidades, necesidades y experiencias de los pacientes internos como foco social de cuestionamiento y acción colectiva</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overflow" id="crono-area">
+        <div id="crono-title">Cronograma del Proyecto</div>
+        <div id="chart"></div>
+    </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="module" src="script.js"></script>
+</html>
