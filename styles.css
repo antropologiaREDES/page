@@ -126,7 +126,7 @@ body {
     text-align: center;
 }
 
-#cover-card > button {
+#cover-card > a > button {
     background-color: #184897;
     border: 0;
     color: white;
@@ -139,11 +139,11 @@ body {
     transition: background-color .4s;
 }
 
-#cover-card > button:before {
+#cover-card > a > button:before {
     content: "🗎 ";
 }
 
-#cover-card > button:hover {
+#cover-card > a>  button:hover {
     cursor: pointer;
     background-color: #4da692;
 }
