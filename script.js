@@ -245,9 +245,4 @@ function handleClick(ev) {
     currentPage = newPage;
 }
 
-const download = document.getElementById("project-download");
-download.addEventListener("click", () => {
-    alert("Todavía estamos trabajando en el documento...\n Disculpa las molestias!")
-});
-
 //#endregion
